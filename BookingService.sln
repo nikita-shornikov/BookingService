@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingService.Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingService.Infrastructure", "src\BookingService.Infrastructure\BookingService.Infrastructure.csproj", "{979EFBB1-2F98-4F23-9B70-24EBBFBBC509}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{882C6B5A-CE14-4981-8FE2-DDA3E6B98C20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingService.Domain.Tests", "tests\BookingService.Domain.Tests\BookingService.Domain.Tests.csproj", "{D069B892-A7DB-4DED-B944-7E179F0E9C76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,11 +42,16 @@ Global
 		{979EFBB1-2F98-4F23-9B70-24EBBFBBC509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979EFBB1-2F98-4F23-9B70-24EBBFBBC509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979EFBB1-2F98-4F23-9B70-24EBBFBBC509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D069B892-A7DB-4DED-B944-7E179F0E9C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D069B892-A7DB-4DED-B944-7E179F0E9C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D069B892-A7DB-4DED-B944-7E179F0E9C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D069B892-A7DB-4DED-B944-7E179F0E9C76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{07F11B0F-2A27-4A2D-91C8-4C9C3B40CD91} = {DBE395AB-1E9F-41D9-9C9B-71E611E5C04C}
 		{E637ED0E-EF6E-4180-AF43-BDDBC2399E16} = {DBE395AB-1E9F-41D9-9C9B-71E611E5C04C}
 		{48178548-02F1-44AF-B8F0-E81A9B11BC17} = {DBE395AB-1E9F-41D9-9C9B-71E611E5C04C}
 		{979EFBB1-2F98-4F23-9B70-24EBBFBBC509} = {DBE395AB-1E9F-41D9-9C9B-71E611E5C04C}
+		{D069B892-A7DB-4DED-B944-7E179F0E9C76} = {882C6B5A-CE14-4981-8FE2-DDA3E6B98C20}
 	EndGlobalSection
 EndGlobal
