@@ -1,5 +1,6 @@
 using BookingService.Application.Interfaces;
 using BookingService.Application.Services;
+using MediatR;
 using BookingServiceApiBookingService = BookingService.Application.Services.BookingService;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IBookingService, BookingServiceApiBookingService>();
+
+builder.Services.AddMediatR(typeof(IBookingService).Assembly);
 
 var app = builder.Build();
 

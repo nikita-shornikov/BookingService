@@ -1,8 +1,9 @@
-﻿namespace BookingService.Application.Contracts;
+﻿using MediatR;
+
+namespace BookingService.Application.Contracts;
 
 public sealed record CreateBookingRequest(
     Guid ResourceId,
     Guid UserId,
     DateTime StartUtc,
-    DateTime EndUtc
-    );
+    DateTime EndUtc) : IRequest<Guid>;
