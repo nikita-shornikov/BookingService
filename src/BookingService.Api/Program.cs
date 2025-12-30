@@ -1,3 +1,4 @@
+using BookingService.Api.Middlewares;
 using BookingService.Application.Interfaces;
 using BookingService.Infrastructure.Persistence;
 using BookingService.Infrastructure.Services;
@@ -24,6 +25,8 @@ using (var scope = app.Services.CreateScope())
     db.Database.EnsureCreated();
 }
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -31,5 +34,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.MapControllers();
+
 app.Run();
